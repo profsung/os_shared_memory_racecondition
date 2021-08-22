@@ -20,7 +20,7 @@ int main() {
 	   mmap(0, SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 	printf("Consumer successfully opened shared memory.\n");
 
-	for (int i = 0; i < 20000; i++) {
+	for (int i = 0; i < 1000; i++) {
 		p_data[0] = 9999;
 		int ms = (rand() % 2000) * 1000;
 		usleep(ms);

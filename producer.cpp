@@ -18,7 +18,7 @@ int main() {
 
 	printf("Producer has created shared memory\n");
 
-	for (int i = 0; i < 20000; i++) {
+	for (int i = 0; i < 1000; i++) {
 		p_data[0] = 1111;
 		int ms = (rand() % 2000) * 1000;
 		usleep(ms);
