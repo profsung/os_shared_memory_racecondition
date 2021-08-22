@@ -22,8 +22,8 @@ int main() {
 
 	for (int i = 0; i < 1000; i++) {
 		p_data[0] = 9999;
-		int ms = (rand() % 2000) * 1000;
-		usleep(ms);
+		int us = rand() % 1500000; // 1.5 sec
+		usleep(us);
 		printf("[%d] consumer: %d\n", i, p_data[0]);
 	}
 
